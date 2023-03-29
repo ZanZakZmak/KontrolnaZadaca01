@@ -81,19 +81,18 @@ const somePeople = {
 //OUTPUT: "Ada"
 
 function najkraciKljuc(People) {
-  let templength = ;
+  let templength = 10000000;
   let tempkey = "";
   for (const key in People) {
-    if(key.length<templength)
-    console.log(key.length);
-    /*if (Object.hasOwnProperty.call(object, key)) {
-            const element = object[key];
-            
-        }*/
+    if (key.length < templength) {
+      tempkey = key;
+      templength = key.length;
+    }
   }
+  return tempkey;
 }
 
-najkraciKljuc(somePeople);
+//console.log(najkraciKljuc(somePeople));
 
 //5 (4 BODA)
 //Napisi funkciju u obliku function expressiona koja vraca proste brojeve
@@ -104,6 +103,9 @@ najkraciKljuc(somePeople);
 //Napisi funkciju u obliku arrow functiona koja kvadrira i vraca dane inpute
 //INPUT: [2, 4, 6, 0, 1]
 //OUTPUT: [4, 16, 36, 0, 1]
+let kvadrirajSve = (arrBroj) => {
+  let temparr = [];
+};
 
 //6 (4 BODA)
 //Napisi funkciju koja vraca sve dogadaje koji su se dogodili prije od vrijednosti iz ulaznog parametra
