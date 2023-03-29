@@ -105,7 +105,12 @@ function najkraciKljuc(People) {
 //OUTPUT: [4, 16, 36, 0, 1]
 let kvadrirajSve = (arrBroj) => {
   let temparr = [];
+  arrBroj.forEach((element) => {
+    temparr.push(element * element);
+  });
+  return temparr;
 };
+//console.log(kvadrirajSve([2, 4, 6, 0, 1]));
 
 //6 (4 BODA)
 //Napisi funkciju koja vraca sve dogadaje koji su se dogodili prije od vrijednosti iz ulaznog parametra
@@ -133,3 +138,17 @@ const someEvents = [
 ];
 //INPUT: (someEvents, 1992)
 //OUTPUT: [{eventName: "Izasao je Python", eventYear: 1991}, {eventName: "Izasao je C++", eventYear: 1985}]
+
+function eventiPrije(eventi, god) {
+  let tempobject;
+  tempobject = eventi.filter((event) => {
+    if (event.eventYear < god) {
+      return true;
+    } else {
+      return false;
+    }
+  });
+  return tempobject;
+}
+
+console.log(eventiPrije(someEvents, 1992));
