@@ -81,9 +81,11 @@ const somePeople = {
 //OUTPUT: "Ada"
 
 function najkraciKljuc(People) {
-  let tempPrezime = "";
+  let templength = ;
+  let tempkey = "";
   for (const key in People) {
-    console.log(People[key]);
+    if(key.length<templength)
+    console.log(key.length);
     /*if (Object.hasOwnProperty.call(object, key)) {
             const element = object[key];
             
