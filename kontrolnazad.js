@@ -61,7 +61,7 @@ function okretanje(tekst) {
       tempBroj++;
     }
   }
-  console.log(tempString, tempBroj);
+  console.log(tempString, ",", tempBroj);
 }
 
 okretanje("Pisanje zadataka nije jednostavan posao");
