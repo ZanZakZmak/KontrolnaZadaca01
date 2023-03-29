@@ -7,7 +7,7 @@ function ispisBrojeva() {
     }
   }
 }
-//ispisBrojeva();
+ispisBrojeva();
 
 //2 (3 BODA)
 //Napisi funkciju koja koristi switch selekciju za pretvaranje numerickog unosa u dan u tjednu. Za neispravan unos ispisi prikladnu poruku.
@@ -43,10 +43,9 @@ function danTjednu(value) {
       break;
   }
 }
-/*
+
 danTjednu(1);
-danTjednu(9);
-danTjednu("hello");*/
+danTjednu(5);
 
 //3 (4 BODA)
 //Napisi funkciju koja okrece uneseni string i broji charactere ne uzimajuci u obzir prazna mjesta (eng. whitespaces)
@@ -65,7 +64,7 @@ function okretanje(tekst) {
   console.log(tempString, tempBroj);
 }
 
-//okretanje("Pisanje zadataka nije jednostavan posao");
+okretanje("Pisanje zadataka nije jednostavan posao");
 
 //4 (4 BODA)
 //Napisi funkciju koja vraca najkraci kljuc u danom objektu
@@ -92,7 +91,7 @@ function najkraciKljuc(People) {
   return tempkey;
 }
 
-//console.log(najkraciKljuc(somePeople));
+console.log(najkraciKljuc(somePeople));
 
 //5 (4 BODA)
 //Napisi funkciju u obliku function expressiona koja vraca proste brojeve
@@ -110,7 +109,7 @@ let kvadrirajSve = (arrBroj) => {
   });
   return temparr;
 };
-//console.log(kvadrirajSve([2, 4, 6, 0, 1]));
+console.log(kvadrirajSve([2, 4, 6, 0, 1]));
 
 //6 (4 BODA)
 //Napisi funkciju koja vraca sve dogadaje koji su se dogodili prije od vrijednosti iz ulaznog parametra
