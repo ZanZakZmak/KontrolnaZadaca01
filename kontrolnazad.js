@@ -66,7 +66,7 @@ function okretanje(tekst) {
 
 okretanje("Pisanje zadataka nije jednostavan posao");
 
-//4 (4 BODA)
+//4 (4 BODA).
 //Napisi funkciju koja vraca najkraci kljuc u danom objektu
 const somePeople = {
   Donald: "Knuth",
