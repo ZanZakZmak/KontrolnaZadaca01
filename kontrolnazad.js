@@ -55,13 +55,17 @@ danTjednu("hello");*/
 
 function okretanje(tekst) {
   tempString = "";
-  for (let i = tekst.length; i >= 0; i--) {
+  tempBroj = 0;
+  for (let i = tekst.length - 1; i >= 0; i--) {
     tempString += tekst[i];
+    if (!(tekst[i] == " ")) {
+      tempBroj++;
+    }
   }
-  console.log(tempString);
+  console.log(tempString, tempBroj);
 }
 
-okretanje("Pisanje zadataka nije jednostavan posao");
+//okretanje("Pisanje zadataka nije jednostavan posao");
 
 //4 (4 BODA)
 //Napisi funkciju koja vraca najkraci kljuc u danom objektu
@@ -75,6 +79,19 @@ const somePeople = {
 };
 //INPUT: somePeople
 //OUTPUT: "Ada"
+
+function najkraciKljuc(People) {
+  let tempPrezime = "";
+  for (const key in People) {
+    console.log(People[key]);
+    /*if (Object.hasOwnProperty.call(object, key)) {
+            const element = object[key];
+            
+        }*/
+  }
+}
+
+najkraciKljuc(somePeople);
 
 //5 (4 BODA)
 //Napisi funkciju u obliku function expressiona koja vraca proste brojeve
